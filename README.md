@@ -1,4 +1,4 @@
-# deeplearning
+# Master deep learning by samples
 
 Learn deep learning by working notebooks
 
