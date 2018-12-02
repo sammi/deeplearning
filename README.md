@@ -13,7 +13,7 @@ Learn deep learning by working notebooks
 2. Create sandbox environment
 ```
    conda env create -f environment.yml
-   source activate gluon
+   source activate sanbox
 ```
 
 3. Update environment
