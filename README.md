@@ -20,3 +20,8 @@ Learn deep learning by working notebooks
 ```
    conda env update -f environmen.yml
 ```
+
+4. Start Jupyter
+```
+   jupyter notebook
+```
