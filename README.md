@@ -4,7 +4,7 @@ Learn deep learning by working notebooks
 
 ## Quick start
 
-1.Download and install Miniconda
+1. Download and install Miniconda
 
    Download it from https://conda.io/miniconda.html 
    
