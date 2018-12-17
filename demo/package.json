@@ -1,0 +1,32 @@
+{
+  "name": "stories",
+  "version": "1.0.0",
+  "description": "bootstrap-jss stoires",
+  "main": "index.js",
+  "author": "Sammi Song",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "start-storybook -s ./public -p 9001 -c .storybook",
+    "test": "react-scripts test --env=jsdom --coverage",
+    "build-storybook": "build-storybook -s public -o .out",
+    "deploy-storybook": "storybook-to-ghpages"
+  },
+  "dependencies": {
+    "bootstrap-jss": "0.12.13",
+    "classnames": "^2.2.6",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-jss": "^8.6.1",
+    "react-time-line": "^0.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@storybook/addon-storyshots": "^3.4.11",
+    "@storybook/react": "^3.4.11",
+    "@storybook/storybook-deployer": "^2.3.0",
+    "react-scripts": "^2.0.4",
+    "react-test-renderer": "^16.5.2",
+    "stringify-object": "^3.2.2"
+  }
+}
