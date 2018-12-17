@@ -3,13 +3,10 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import Timeline from 'react-time-line'
 import { Reboot, Classes } from 'bootstrap-jss'
-import { replace } from 'lodash'
 import injectSheet, { ThemeProvider } from 'react-jss'
-const { btn, btnLg, btnSm, btnLink, btnThemeColors, btnBlock, btnOutlineThemeColors } = Classes.Buttons
-const { btnGroup, btnGroupToggle, btnToolbar } = Classes.ButtonGroup
+const { btn, btnThemeColors } = Classes.Buttons
 
 const themeColors = btnThemeColors()
-const themeOutlineColors = btnOutlineThemeColors()
 
 const Button = injectSheet(theme => ({
     active: {},
@@ -28,29 +25,37 @@ const Button = injectSheet(theme => ({
   <button className={classes.btn}>{buttonValue}</button>
 )
 
+const predictAPI = () => {
+  return fetch('http://localhost:5000/predict', { mode: 'cors'})
+    .then(res => {console.log(res)})
+    .catch(error => error)
+}
+
+predictAPI()
+
 const event1 = [
-    { ts: '2017-09-16T12:22:46.587Z', text: 'Swith IP location alert' },
-    { ts: '2017-09-16T12:21:46.587Z', text: 'Report Repair Applications Alert' },
-    { ts: '2017-09-16T12:20:46.587Z', text: 'Login by many user names' }
+    { ts: '2017-09-16T12:22:46.587Z', text: 'Swith IP location alert 10 times' },
+    { ts: '2017-09-16T12:21:46.587Z', text: 'Report Repair Applications Alert 5 times' },
+    { ts: '2017-09-16T12:20:46.587Z', text: 'Login by many user names 20 times' }
 ]
 
 const themeColorName = 'btn-primary'
 
 const IntelligentTimeLine = () => <div>
   <Timeline items={event1} />
-  <ThemeProvider key={themeColorName} theme={{ color: themeColorName }}>
+  <ThemeProvider theme={{ color: themeColorName }}>
     <span>
       <Button buttonValue='Device Freeze' />
     </span>
   </ThemeProvider>
   <Timeline items={event1} />
-  <ThemeProvider key={themeColorName} theme={{ color: themeColorName }}>
+  <ThemeProvider theme={{ color: themeColorName }}>
     <span>
       <Button buttonValue='File Delete' />
     </span>
   </ThemeProvider>
   <Timeline items={event1} />
-  <ThemeProvider key={themeColorName} theme={{ color: themeColorName }}>
+  <ThemeProvider theme={{ color: themeColorName }}>
     <span>
       <Button buttonValue='Report Stolen Device' />
     </span>
