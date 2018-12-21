@@ -25,7 +25,7 @@ Learn deep learning by Jupyter notebooks
    activate.bat sanbox
 ```
 
-4. Start Jupyter and run notebook at http://localhost:9001
+4. Start Jupyter and run notebook at http://localhost:8888
 ```
    jupyter notebook
 ```
