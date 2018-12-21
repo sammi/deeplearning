@@ -13,8 +13,6 @@ Learn deep learning by Jupyter notebooks
 2. Create sandbox environment
 ```
    cd deeplearning
-```
-```
    conda env create -f environment.yml
 ```
 3. Activate environment
