@@ -10,15 +10,11 @@ Learn deep learning by working notebooks
    
    Add Anaconda to my PATH environment variable
 
-2. Create sandbox environment
+2. Create sandbox environment for Mac/Linux
 ```
+   cd deeplearning
    conda env create -f environment.yml
    source activate sanbox
-```
-
-3. Update environment
-```
-   conda env update -f environmen.yml
 ```
 
 4. Start Jupyter
